@@ -44,9 +44,6 @@ class MintCheck
     
     p options if $DEBUG
 
-    # hpricot buffer increase
-    Hpricot.buffer_size = 262144
-
     # create the mechanize agent and set it up
     @agent = WWW::Mechanize.new
     @agent.user_agent_alias = 'Mac Safari'
